@@ -25,10 +25,11 @@ source-repository head
 
 library
   exposed-modules:
-      DayOne.MeasureDepth
-      DayOne.MeasureSlidingDepth
-      DayTwo.CalculateCoordinates
-      DayTwo.CalculateCoordinatesWithAim
+      Day_01.MeasureDepth
+      Day_01.MeasureSlidingDepth
+      Day_02.CalculateCoordinates
+      Day_02.CalculateCoordinatesWithAim
+      Day_03.GetPowerConsumption
   other-modules:
       Paths_advent_of_code
   hs-source-dirs:

@@ -1,4 +1,4 @@
-module DayOne.MeasureDepth
+module Day_01.MeasureDepth
   ( getMeasurements,
     printResult,
     toInt,
@@ -10,7 +10,7 @@ toInt string = read string :: Int
 
 getMeasurements :: IO [Int]
 getMeasurements = do
-  contents <- readFile "/Users/bilal.kilic/workspace/personal/advent-of-code/src/dayone/input.txt"
+  contents <- readFile "/Users/bilal.kilic/workspace/personal/advent-of-code/src/day_01/input.txt"
   let stringLines = lines contents
   let intLines = map toInt stringLines
   return intLines

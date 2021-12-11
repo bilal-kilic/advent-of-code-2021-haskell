@@ -1,11 +1,11 @@
-module DayTwo.CalculateCoordinates
+module Day_02.CalculateCoordinates
   ( Direction (..),
     parseCommands,
     printDayTwoResult,
   )
 where
 
-import DayOne.MeasureDepth (toInt)
+import Day_01.MeasureDepth (toInt)
 
 data Direction = Forward | Up | Down deriving (Eq)
 
@@ -13,7 +13,7 @@ type Coordinate = (Int, Int)
 
 getCommands :: IO [String]
 getCommands = do
-  contents <- readFile "/Users/bilal.kilic/workspace/personal/advent-of-code/src/daytwo/input.txt"
+  contents <- readFile "/Users/bilal.kilic/workspace/personal/advent-of-code/src/day_02/input.txt"
   return $ lines contents
 
 wordsWhen :: (Char -> Bool) -> String -> [String]

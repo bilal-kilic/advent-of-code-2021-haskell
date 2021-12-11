@@ -1,11 +1,11 @@
 module Main where
 
-import DayOne.MeasureSlidingDepth
-import DayTwo.CalculateCoordinates
-import DayTwo.CalculateCoordinatesWithAim
+import Day_01.MeasureSlidingDepth
+import Day_02.CalculateCoordinates
+import Day_03.GetPowerConsumption
 
 main :: IO ()
-main = printDayTwoResultWithAim
+main = printPowerConsumption
 
 
 

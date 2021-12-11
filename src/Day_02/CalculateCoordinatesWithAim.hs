@@ -1,6 +1,6 @@
-module DayTwo.CalculateCoordinatesWithAim where
+module Day_02.CalculateCoordinatesWithAim where
 
-import DayTwo.CalculateCoordinates (Direction (..), parseCommands)
+import Day_02.CalculateCoordinates (Direction (..), parseCommands)
 
 type CoordinateWithAim = (Int, Int, Int)
 

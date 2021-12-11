@@ -1,6 +1,6 @@
-module DayOne.MeasureSlidingDepth where
+module Day_01.MeasureSlidingDepth where
 
-import DayOne.MeasureDepth
+import Day_01.MeasureDepth
 
 measureSlidingDepth :: IO Int
 measureSlidingDepth = do
