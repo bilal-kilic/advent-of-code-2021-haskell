@@ -1,6 +1,7 @@
 module DayOne.MeasureDepth
   ( getMeasurements,
     printResult,
+    toInt,
   )
 where
 
@@ -27,7 +28,8 @@ countDeeper numbers currentIndexed total
 measureDepth :: IO Int
 measureDepth = do
   measurements <- getMeasurements
-  return (foldl (flip (countDeeper measurements)) 0 (zip [0 ..] measurements))
+  let indexedMeasurements = zip [0 ..] measurements
+  return (foldl (flip (countDeeper measurements)) 0 indexedMeasurements)
 
 printResult :: IO ()
 printResult = do

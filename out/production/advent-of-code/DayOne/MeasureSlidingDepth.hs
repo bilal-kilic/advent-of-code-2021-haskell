@@ -5,8 +5,7 @@ import DayOne.MeasureDepth
 measureSlidingDepth :: IO Int
 measureSlidingDepth = do
   measurements <- getMeasurements
-  let indexedMeasurements = zip [0 ..] measurements
-  return (foldl (flip (countSlidingDepthChange measurements)) 0 indexedMeasurements)
+  return (foldl (flip (countSlidingDepthChange measurements)) 0 (zip [0 ..] measurements))
 
 countSlidingDepthChange :: [Int] -> (Int, Int) -> Int -> Int
 countSlidingDepthChange measurements currentIndexed totalIncrease
@@ -18,7 +17,8 @@ countSlidingDepthChange measurements currentIndexed totalIncrease
     currentWindow = measurements !! currentIndex
     nextWindow = measurements !! (currentIndex + 3)
 
-printSlidingDepthResult :: IO ()
+
+printSlidingDepthResult :: IO () 
 printSlidingDepthResult = do
   result <- measureSlidingDepth
   print result

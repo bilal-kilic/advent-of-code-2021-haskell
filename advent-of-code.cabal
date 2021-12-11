@@ -27,6 +27,8 @@ library
   exposed-modules:
       DayOne.MeasureDepth
       DayOne.MeasureSlidingDepth
+      DayTwo.CalculateCoordinates
+      DayTwo.CalculateCoordinatesWithAim
   other-modules:
       Paths_advent_of_code
   hs-source-dirs:
